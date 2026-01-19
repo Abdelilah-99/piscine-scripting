@@ -1,0 +1,1 @@
+curl -s https://assets.01-edu.org/devops-branch/find-files-example.zip --output out && unzip -q out && find . -type f \( -name 'a*' -o -name '*z' \) && rm -rf find-files-example out
