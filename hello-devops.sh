@@ -1,2 +1,1 @@
-echo Hello 01-user!
-
+echo "Hello $USER"
