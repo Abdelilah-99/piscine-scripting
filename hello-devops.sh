@@ -1,2 +1,1 @@
-echo -n "Hello "
-whoami
+echo "Hello babdelil"
