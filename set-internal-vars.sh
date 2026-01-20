@@ -11,6 +11,6 @@ for item in "${MY_ARR[@]}"; do
     if [[ "$item" == "five" ]]; then
         break
     fi
-    echo -n ", "
+    echo -n " "
 done
 echo ""
