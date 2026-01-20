@@ -1,1 +1,1 @@
-export PATH=$PATH:/myBins
+export PATH=$PATH:~/myBins
