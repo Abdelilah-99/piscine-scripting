@@ -1,1 +1,1 @@
-alias custom-ls='ls -ls -A --no-group -S'
+alias custom-ls='ls -ls -A --no-group'
