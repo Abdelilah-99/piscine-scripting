@@ -5,12 +5,4 @@ MY_ARR=(one two three four five)
 echo $MY_MESSAGE
 echo $MY_NUM
 echo $MY_PI
-# echo $MY_ARR
-for item in "${MY_ARR[@]}"; do
-    echo -n "$item"
-    if [[ "$item" == "five" ]]; then
-        break
-    fi
-    echo -n " "
-done
-echo ""
+echo "${MY_ARR[@]}"
