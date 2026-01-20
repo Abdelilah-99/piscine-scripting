@@ -13,4 +13,3 @@ for item in "${MY_ARR[@]}"; do
     fi
     echo -n ", "
 done
-echo ""
