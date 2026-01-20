@@ -1,0 +1,1 @@
+ls -l --time-style=+"%Y-%m-%d %H:%M" | awk '{print $1, $2, $6, $7, $8}'
