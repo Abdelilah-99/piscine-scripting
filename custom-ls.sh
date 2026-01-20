@@ -1,1 +1,1 @@
-alias custom-ls='ls'
+alias custom-ls='ls -la'
