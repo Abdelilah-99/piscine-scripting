@@ -1,1 +1,1 @@
-bash show-info.sh
+cat <<EOF > show-info.sh
