@@ -1,1 +1,1 @@
-cat filtered_files.txt | grep " - J*" >> results.txt
+cat filtered_files.txt | grep " - J*" >> filtered_files.txt
