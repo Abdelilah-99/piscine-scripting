@@ -1,0 +1,1 @@
+bash show-info.sh
