@@ -1,1 +1,1 @@
-grep " - J*" songs.txt >> results.txt
+cat songs.txt | grep " - J" >> results.txt
