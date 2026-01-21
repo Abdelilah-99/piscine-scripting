@@ -1,1 +1,1 @@
-cat filtered_files.txt | grep " - J*" >> results.txt
+cat songs.txt | grep " - J*" >> results.txt
