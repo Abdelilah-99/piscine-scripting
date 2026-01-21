@@ -1,0 +1,1 @@
+ls --ignore="*.txt" > filtered_files.txt
