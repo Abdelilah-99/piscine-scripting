@@ -23,7 +23,6 @@ done
 max="${array[0]}"
 
 for i in "${array[@]}"; do
-    echo "Comparing: $i with current max: $max"
     if [[ $i -gt $max ]]; then
         max="$i"
     fi
