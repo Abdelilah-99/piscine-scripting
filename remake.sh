@@ -16,12 +16,12 @@ touch "$1/come"
 mkdir "$1/mi"
 touch "$1/diverto"
 
-chmod 407 "$1/ciao"
+chmod 442 "$1/ciao" 0 1 10 11 100
 chmod 777 "$1/mamma"
 chmod 400 "$1/guarda"
-chmod 627 "$1/come"
-chmod 253 "$1/mi"
-chmod 431 "$1/diverto"
+chmod 642 "$1/come"
+chmod 452 "$1/mi"
+chmod 421 "$1/diverto"
 
 touch -t 01010001 "$1/ciao"
 touch -t 01020001 "$1/mamma"
