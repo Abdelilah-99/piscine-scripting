@@ -16,7 +16,7 @@ touch "$1/come"
 mkdir "$1/mi"
 touch "$1/diverto"
 
-chmod 442 "$1/ciao" 0 1 10 11 100
+chmod 442 "$1/ciao"
 chmod 777 "$1/mamma"
 chmod 400 "$1/guarda"
 chmod 642 "$1/come"
