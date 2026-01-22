@@ -15,5 +15,5 @@ if [[ "$b" -eq 0 ]]; then
     echo "Error: division by zero is not allowed"
     exit 0
 fi
-total=$(("$a" / "$b"))
-echo $total
+# total=$(())
+echo "$a" / "$b" | bc 
