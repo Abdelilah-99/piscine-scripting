@@ -17,3 +17,4 @@ if [[ ! a =~ ^[+-]?[0-9]+$ || ! b =~ ^[+-]?[0-9]+$ ]]; then
 fi
 total=$((a / b))
 echo $total
+exit 0
