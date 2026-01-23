@@ -1,5 +1,5 @@
 
-if [[ "$#" != 1 ]]; then
+if [[ "$#" != 2 ]]; then
     echo "Error: The script only works with two arguments!"
     exit 0
 elif [[ ! "$1" =~ ^[+-]?[0-9]+$ || ! "$2" =~ ^[+-]?[0-9]+$ ]]; then
