@@ -12,7 +12,7 @@ do_sub() {
 }
 
 do_mult() {
-    echo $1 * $2 | bc
+    echo $1 '*' $2 | bc
 }
 
 do_divide() {
