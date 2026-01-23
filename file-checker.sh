@@ -7,6 +7,8 @@ fi
 
 FILE=$1
 
+
+
 if [[ -e "$FILE" ]]; then
     echo "File exists"
     
@@ -31,3 +33,4 @@ else
     echo "File does not exist"
     exit 0
 fi
+
