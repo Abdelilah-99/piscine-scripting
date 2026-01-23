@@ -4,8 +4,7 @@ array=()
 c=0
 while true; do
     c=$((c + 1))
-    echo -n "Enter a number: "
-    read -r line
+    read -p "Enter a number: " line
     if [[ ! $line =~ ^[0-9]+$ ]]; then
         echo "ERROR: Invalid input only positive numerical characters are allowed"
         exit 0
