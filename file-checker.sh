@@ -31,6 +31,6 @@ if [[ -e "$FILE" ]]; then
     fi
 else
     echo "File does not exist"
-    exit 0
+    exit 1
 fi
 
