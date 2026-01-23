@@ -3,6 +3,10 @@ if [[ "$#" != 3 ]]; then
     exit 1
 fi
 
+if [[ ! "$1" =~ ^[+-]?[0-9]+$ || ! "$3" =~ ^[+-]?[0-9]+$ ]]; then
+    echo "Error: invalid number"
+    exit 4
+fi
 do_add() {
     echo $1 + $2 | bc
 }
