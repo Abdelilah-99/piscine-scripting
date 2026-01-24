@@ -8,7 +8,7 @@ fi
 
 for ((i=1; i<=tries; )); do
     remaining=$((tries - i + 1))
-    echo "Enter your guess ($remaining tries left): "
+    echo "Enter your guess ($remaining tries left):"
     read guess
 
     if [[ -z "$guess" || ! "$guess" =~ ^[0-9]+$ ]]; then
