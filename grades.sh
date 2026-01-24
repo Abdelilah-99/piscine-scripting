@@ -1,36 +1,39 @@
 #!/bin/bash
 
-studentnum=$1
-studentname=()
-studentgrade=()
+students=$1
+names=()
+grades=()
 
-# Argument validation
-if [[ "$#" -ne 1 || ! "$studentnum" =~ ^[0-9]+$ || $studentnum -le 0 ]]; then
-    echo "Error: expect 1 argument only!"
+# Argument check
+if [[ "$#" -ne 1 ]]; then
+    echo "Error: expect 1 argument only!" >&2
     exit 1
 fi
 
-for ((i=1; i<=studentnum; i++)); do
+# Loop to read inputs
+for ((i=1; i<=students; i++)); do
     read -p "Student Name #$i: " name
     read -p "Student Grade #$i: " grade
 
-    if [[ ! "$grade" =~ ^[0-9]+$ || $grade -lt 0 ]]; then
-        echo "Error: The grade $grade is not a valid input. Only numerical grades between 0 and 100 are accepted."
+    # Grade validation
+    if [[ ! "$grade" =~ ^[0-9]+$ || $grade -lt 0 || $grade -gt 100 ]]; then
+        echo "Error: The grade '$grade' is not a valid input. Only numerical grades between 0 and 100 are accepted." >&2
         exit 1
     fi
 
-    studentname+=("$name")
-    studentgrade+=("$grade")
+    names+=("$name")
+    grades+=("$grade")
 done
 
-for ((i=0; i<studentnum; i++)); do
-    if [[ ${studentgrade[i]} -ge 90 ]]; then
-        echo "${studentname[i]}: You did an excellent job!"
-    elif [[ ${studentgrade[i]} -ge 70 ]]; then
-        echo "${studentname[i]}: You did a good job!"
-    elif [[ ${studentgrade[i]} -ge 50 ]]; then
-        echo "${studentname[i]}: You need a bit more effort!"
+# Output evaluations
+for ((i=0; i<students; i++)); do
+    if [[ ${grades[i]} -ge 90 ]]; then
+        echo "${names[i]}: You did an excellent job!"
+    elif [[ ${grades[i]} -ge 70 ]]; then
+        echo "${names[i]}: You did a good job!"
+    elif [[ ${grades[i]} -ge 50 ]]; then
+        echo "${names[i]}: You need a bit more effort!"
     else
-        echo "${studentname[i]}: You had a poor performance!"
+        echo "${names[i]}: You had a poor performance!"
     fi
 done
