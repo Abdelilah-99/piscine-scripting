@@ -14,7 +14,7 @@ for ((i=1; i<=studentnum; i++)); do
     read -p "Student Name #$i: " name
     read -p "Student Grade #$i: " grade
 
-    if [[ ! "$grade" =~ ^[0-9]+$ || $grade -lt 0 || $grade -gt 100 ]]; then
+    if [[ ! "$grade" =~ ^[0-9]+$ || $grade -lt 0 ]]; then
         echo "Error: The grade $grade is not a valid input. Only numerical grades between 0 and 100 are accepted."
         exit 1
     fi
