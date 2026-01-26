@@ -5,7 +5,7 @@ def clean_list(shopping_list):
     if (shopping_list == []):
         return []
     for item in shopping_list:
-        list.append(str(i) + "/ " + str.strip(item))
+        list.append(str(i) + "/ " + str.strip(item).capitalize)
         i+=1
         if (item == 'milk'):
             f = 1
