@@ -11,6 +11,7 @@ def merge_two(first_dict):
         # print("value: ", end="")
         value = int(input("value: "))
         new_dic = {**first_dict, **{key: value}}
-    print(json.dumps(new_dic))
+    # print(json.dumps(new_dic))
+    return new_dic
 
-merge_two({"Ahmed": 15})
+# merge_two({"Ahmed": 15})
