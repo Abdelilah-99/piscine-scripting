@@ -7,6 +7,6 @@ def tokenize(sentence):
     rs = []
     for v in arr:
         if v != '':
-            rs.append(v)
+            rs.append(str.lower(v))
     return rs
 # tokenize("abdelilah,bouchikhi test!!")
