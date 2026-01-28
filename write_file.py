@@ -7,7 +7,7 @@ def to_do(tasks):
     task_str = ""
     for task in tasks:
         date = task[0]
-        task_str += date.strftime("%A %d %B %Y") + " " + task[1] + "\n"
+        task_str += date.strftime("%A %d %B %Y") + ": " + task[1] + "\n"
     with open("output.txt", "w") as o:
         return o.write(str.strip(task_str))
 # print(to_do(to_do_list))
