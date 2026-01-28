@@ -7,10 +7,14 @@ class User:
 
 def create_new_user(registration):
     data = json.loads(registration)
-    user = User()
-    user.username = data['username']
-    user.email = data['email']
-    return user
+    if 'username' in data and 'email' in data:
+        user = User()
+        user.username = data['username']
+        user.email = data['email']
+        return user
+    return User()
+
 
 def user_to_json(user):
     return json.dumps(user.__dict__)
+
